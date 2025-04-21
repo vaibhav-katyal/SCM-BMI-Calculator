@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="shortcut icon" href="other images/images-removebg-preview.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="index.html">
+                <img src="other images/images-removebg-preview.png" alt="logo">
+                <div>FitGenius</div>
+            </a>
+        </div>
+
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="calc.html">BMI Calculator</a></li>
+                <li><a href="bmiinfo.html">BMI Info</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <img src="other images/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="user">
+            <button class="btn" id="sign">Sign Up</button>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="signUpPopup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h2>Sign Up</h2>
+                <form id="signUpForm">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="meet">
+        <h2>Meet Our Team</h2>
+    </div>
+
+    <div class="cards">
+        <a href="https://www.linkedin.com/in/vaibhav-katyal-a65578328" target="_blank"><div class="card-1 card_common">
+            <div class="pfp">
+                <img src="team pfps/vaibhav.jpg" alt="Team-member 1" >
+                <div class="info-parent">
+
+                    <span class="cards-info">Vaibhav Katyal</span>
+                    <span class="cards-info">2410990480</span>
+                    <span class="cards-info">Front-end Developer</span>
+                </div>
+            </div>
+        </div>
+    </a>
+        <a href="https://www.linkedin.com/in/manu-sharma-866372318/" target="_blank"><div class="card-2 card_common">
+            <div class="pfp">
+                <img src="team pfps/manu.jpg" alt="Team-member 2">
+                <div class="info-parent">
+
+                    <span class="cards-info">Manu Sharma</span>
+                    <span class="cards-info">2410990448</span>
+                    <span class="cards-info">Front-end Developer</span>
+                </div>
+            </div>
+        </div>
+    </a>
+        <a href="" target="_blank"><div class="card-3 card_common">
+            <div class="pfp">
+                <img src="team pfps/gautam.jpg" alt="Team-member 3">
+                <div class="info-parent">
+                    <span class="cards-info">Madhav Gautam</span>
+                    <span class="cards-info">2410990429</span>
+                    <span class="cards-info">Front-end Developer</span>
+                </div>
+            </div>
+        </div>
+        <a href="" target="_blank"><div class="card-4 card_common">
+            <div class="pfp">
+                <img src="team pfps/medhansh.jpg" alt="Team-member 4">
+                <div class="info-parent">
+                    <span class="cards-info">Medhansh Garg</span>
+                    <span class="cards-info">2410990452</span>
+                    <span class="cards-info">Front-end Developer</span>
+                </div>
+            </div>
+        </div>
+        <a href="" target="_blank"><div class="card-5 card_common">
+            <div class="pfp">
+                <img src="team pfps/jatin.jpg" alt="Team-member 5">
+                <div class="info-parent">
+                    <span class="cards-info">Jatin Kumar</span>
+                    <span class="cards-info">2410990420</span>
+                    <span class="cards-info">Front-end Developer</span>
+                </div>
+            </div>
+        </div>
+    </a>
+    </div>
+
+    <footer>
+        <div class="foot_left">
+
+            <h2>Sign up to receive free updates on health, fitness, and BMI insights!</h2>
+            <h4>Get tips for eating better and exercising smarter</h4>
+            <div class="subscribe_btn">
+                <input type="email" name="" id="subscription" placeholder="Enter your email address">
+                <input type="button" value="Subscribe" id="sb_btn">
+            </div>
+        </div>
+
+        <div class="follow">
+            <span>Follow FitGenius on various platforms</span>
+            <div class="platforms">
+                <a href="https://www.facebook.com"><img src="svgs/facebook.svg" alt="facebook" class="svg_size_design invert-on-hover" id="facebook"></a>
+                <a href="https://www.twitter.com"><img src="svgs/twitter.svg" alt="twitter" class="svg_size_design invert-on-hover" id="twitter"></a>
+                <a href="https://www.instagram.com"><img src="svgs/instagram.svg" alt="instagram" class="svg_size_design invert-on-hover" id="instagram"></a>
+                <a href="https://www.linkedin.com"><img src="svgs/linkedin.svg" alt="linkedin" class="svg_size_design invert-on-hover" id="linkedin"></a>
+                <a href="https://www.pinterest.com"><img src="svgs/pinterest-logo.svg" alt="pinterest" class="svg_size_design invert-on-hover" id="pinterest"></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; Copyright FitGenius. All Rights Reserved.</span>
+        </div>
+    </footer>
+    <script src="signup.js"></script>
+    <script src="navbar.js"></script>
+</body>
+
+</html>
