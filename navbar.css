@@ -1,0 +1,100 @@
+/* Your existing CSS code */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://www.iciciprulife.com/content/icici-prudential-life-insurance/testing/tools-and-calculators/bmi_assets/images/calcBG.svg") repeat-y;
+    background-size: cover;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Your other existing styles */
+
+.left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    left: 18px;
+}
+
+.left img {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 113px;
+}
+
+.left div {
+    text-align: center;
+    position: relative;
+    bottom: -39px;
+    right: -120px;
+    display: inline-block;
+    font-size: 27px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-style:normal;
+}
+
+.left a {
+    color: black;
+    text-decoration: none;
+}
+
+.center {
+    /* border: 2px solid blue; */
+    display: block;
+    width: 43%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.right {
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    position: absolute;
+    top: 24px;
+    right: 20px
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    padding: 26px;
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 17px;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 0; 
+    height: 2px; 
+    background-color: #ae2b30;
+    transition: width 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: #ae2b30;
+    font-weight: 350;
+}
+
+.navbar li a:hover::after {
+    width: 55%; 
+}
