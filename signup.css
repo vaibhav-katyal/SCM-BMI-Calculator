@@ -46,3 +46,43 @@
     flex-direction: column;
 }
   
+.popup input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.popup .submit-btn {
+    background: linear-gradient(140deg, #cd4247, #b75255);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: transform 0.6s ease;
+}
+  
+.popup .submit-btn:hover {
+    background: linear-gradient(140deg, #ba363a, #e84f54);
+    transform: scale(1.02);
+}
+  
+.popup{
+    animation-name: popup-anim;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes popup-anim {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
