@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="shortcut icon" href="other images/images-removebg-preview.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="index.html">
+                <img src="other images/images-removebg-preview.png" alt="logo">
+                <div>FitGenius</div>
+            </a>
+        </div>
+
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="calc.html">BMI Calculator</a></li>
+                <li><a href="bmiinfo.html">BMI Info</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <img src="other images/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="user">
+            <button class="btn" id="sign">Sign Up</button>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="signUpPopup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h2>Sign Up</h2>
+                <form id="signUpForm">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="introtobmi">
+            <div class="heading">
+            <h2 >Introduction to Body Mass Index (BMI)</h2>
+            </div>
+            <div class="para">
+
+            <p>
+            Body Mass Index (BMI) is a widely used tool to assess whether an individual’s weight is appropriate for their height. It provides a numerical value that helps determine if a person falls within a general healthy weight range. BMI is calculated by dividing a person’s weight in kilograms by the square of their height in meters. While BMI doesn’t measure body fat directly, it serves as a useful screening tool to identify potential weight-related health risks. <br>
+
+            Health professionals often use BMI to monitor population health and track changes in weight trends over time. By providing a simple calculation, BMI can offer insight into whether an individual may need to consider changes in their diet, physical activity, or lifestyle. Instead of limitations, BMI offers several benefits, including its ease of use and its ability to provide a quick, non-invasive measurement. <br>
+
+            As a widely accepted standard, BMI is effective in large-scale health studies and public health initiatives. It helps identify at-risk populations and can support the development of preventive health strategies. BMI is also accessible, requiring only basic measurements of weight and height, making it a practical tool for individuals and healthcare providers alike. Although not a perfect measurement, BMI remains a valuable resource for assessing general health and encouraging proactive health management. <br>
+            </p>
+            </div>
+        </div>
+
+        <div class="importance">
+            <h2 class="heading">Importance of BMI Calculator</h2>
+            <p>A BMI calculator is a valuable tool for assessing an individual's health. Here’s why it’s useful: <br>
+                <ul>
+
+                    <li><b>Health Risk Assessment</b> : Helps physicians evaluate health risks related to body weight, like hypertension or diabetes, for better treatment planning. </li><br>
+                    
+                    <li><b>Weight Management</b> : Serves as an "Obesity Indicator," assisting individuals in managing weight to stay within a healthy BMI range.</li> <br>
+                    
+                    <li><b>Public Health Data</b> : Contributes to national health assessments by providing key BMI-based metrics.</li> <br>
+                    
+                    <li><b>Insurance Premium Determination</b> : Used in insurance health assessments, where BMI can impact premium rates.</li> <br>
+                
+                    <li><b>Weight Tracking</b> : Useful for tracking weight changes and monitoring progress in weight management goals.</li> <br>
+                
+            </ul>
+                While BMI alone doesn’t determine overall health, it offers a quick snapshot, especially for those at high risk.</p>
+            </div>
+
+            <div class="health_risks">
+                <div class="overweight common">
+                    <h2 class="heading">Health risks related to being overweight</h2>
+                    <p>Being overweight can lead to numerous health and financial challenges. Higher life and health insurance premiums often accompany the added costs of more frequent medical visits. Health risks associated with being overweight or obese include:
+                    <ul>
+
+                        <li>High blood pressure</li>
+                        <li>Stroke</li>
+                        <li>Type 2 diabetes</li>
+                        <li>Heart disease</li>
+                        <li>Insulin resistance</li>
+                        <li>Varicose veins</li>
+                        <li>Physical and mental stress-induced conditions</li>
+                        <li>PCOD</li>
+                        <li>Breathing issues and sleep apnea</li>
+                        <li>Depression and mental health disorders</li>
+                        <li>Gynecological issues</li>
+                        <li>Increased cancer risk (breast, kidney, colon, gall bladder, endometrial, liver)</li></ul></p>
+                    
+                </div>
+                <div class="underweight common">
+                    <h2 class="heading">Health risks related to being underweight</h2>
+                    <p>Just as being overweight is a problem, underweight people also encounter a host of medical issues such as:
+                    <ul>
+
+                        <li>Vitamin deficiency</li>
+                        <li>Anemia</li>
+                        <li>Lessening Immunity</li>
+                        <li>Malnutrition</li>
+                        <li>Hormonal imbalance</li>
+                        <li>Osteoporosis</li>
+                        All these conditions and diseases mark a person as a high-risk profile, especially when purchasing health insurance or life insurance plan. When found so, the premiums are likely to go higher whereas many times, companies may totally reject the application if the health conditions seem to unstable or alarming.</ul></p>
+
+                    </div>
+            </div>
+
+            <footer>
+                <div class="foot_left">
+        
+                    <h2>Sign up to receive free updates on health, fitness, and BMI insights!</h2>
+                    <h4>Get tips for eating better and exercising smarter</h4>
+                    <div class="subscribe_btn">
+                        <input type="email" name="" id="subscription" placeholder="Enter your email address">
+                        <input type="button" value="Subscribe" id="sb_btn">
+                    </div>
+                </div>
+        
+                <div class="follow">
+                    <span>Follow FitGenius on various platforms</span>
+                    <div class="platforms">
+                        <a href="https://www.facebook.com"><img src="svgs/facebook.svg" alt="facebook" class="svg_size_design invert-on-hover" id="facebook"></a>
+                        <a href="https://www.twitter.com"><img src="svgs/twitter.svg" alt="twitter" class="svg_size_design invert-on-hover" id="twitter"></a>
+                        <a href="https://www.instagram.com"><img src="svgs/instagram.svg" alt="instagram" class="svg_size_design invert-on-hover" id="instagram"></a>
+                        <a href="https://www.linkedin.com"><img src="svgs/linkedin.svg" alt="linkedin" class="svg_size_design invert-on-hover" id="linkedin"></a>
+                        <a href="https://www.pinterest.com"><img src="svgs/pinterest-logo.svg" alt="pinterest" class="svg_size_design invert-on-hover" id="pinterest"></a>
+                    </div>
+                </div>
+        
+                <div class="copyright">
+                    <span>&copy; Copyright FitGenius. All Rights Reserved.</span>
+                </div>
+            </footer>
+    </main>
+
+</body>
+</html>
