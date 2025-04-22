@@ -1,0 +1,490 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://www.iciciprulife.com/content/icici-prudential-life-insurance/testing/tools-and-calculators/bmi_assets/images/calcBG.svg") repeat-y;
+    background-size: cover;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    box-sizing: border-box;
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.welcome_main {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    border: 1px solid #ae2b30;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 57vw;
+    margin: 1px auto;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1rem 3rem 2.3rem;
+    position: relative;
+}
+
+.welcome {
+    color: #ae2b30;
+    font-weight: 500;
+}
+
+.welcometo {
+    font-size: 2rem;
+}
+
+.fitgen {
+    font-size: 3rem;
+}
+
+.name {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.6 rem;
+}
+
+.content {
+    display: block;
+    text-align: center;
+    line-height: 2.2;
+}
+
+.calcbmi {
+    /* border: 2px solid; */
+    margin-top: 13px;
+}
+
+
+.calc_but {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    background: linear-gradient(140deg, #cd4247,
+            #b75255);
+    position: relative;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 117%;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+}
+
+.calc_but:hover {
+    background: linear-gradient(140deg, #ba363a,
+            #e84f54);
+    transform: scale(1.02);
+}
+
+.calc_but:focus {
+    box-shadow: 0px 0px 4px 1px rgba(237, 231, 225, 0.9);
+}
+
+.whyuse {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ae2b30;
+    justify-content: center;
+    align-items: center;
+    width: 81%;
+    margin: 1px auto;
+    margin-top: 35px;
+    background-color: white;
+    border-radius: 6px;
+    padding-top: 12px;
+}
+
+.head1whyuse {
+    margin: 0;
+    padding: 0;
+}
+
+.head1whyuse {
+    color: #0a0a59;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pt {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    border: 1px solid rgba(127, 95, 130, 0.37);
+    margin: 10px;
+    width: 195px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 0.5em;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px rgba(127, 95, 130, 0.37);
+    transition: all 0.4s ease-in-out;
+    background-color: #fdf2ec;
+}
+
+.pt:hover {
+    background-color: #f9d3bb;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.pt1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.2;
+}
+
+.pt1 img {
+    width: 46px;
+    margin-top: 19px;
+    margin-bottom: 2px;
+}
+
+.pt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.2;
+}
+
+.pt2 img {
+    width: 45px;
+    margin-top: 19px;
+}
+
+.pt3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+.pt3 img {
+    width: 38px;
+    margin-top: 18px;
+}
+
+.pt4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.2;
+}
+
+.pt4 img {
+    width: 53px;
+    margin-top: 21px;
+}
+
+.cards a {
+    text-decoration: none;
+    color: black;
+}
+
+.cards .active {
+    background-color: #f9d3bb;
+    transform: scale(1.03);
+}
+
+.content-cards {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    background-color: #f9d3bb;
+    text-align: left;
+    width: 63%;
+    padding-top: 15px;
+    padding-left: 56px;
+    padding-right: 48px;
+    padding-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    line-height: 1.2;
+    border: 1px solid rgba(127, 95, 130, 0.37);
+    box-shadow: 0px 0px 3px 0px rgba(127, 95, 130, 0.37);
+    border-radius: 4px;
+}
+
+:root {
+    --border_og: 1px solid rgba(127, 95, 130, 0.37);
+    --box-shadow_og: 0px 0px 3px 0px rgba(127, 95, 130, 0.37);
+    --border-rad_og: 4px;
+    --bg-color: rgba(128, 128, 128, 0.1)
+}
+
+
+.content-cards h3 {
+    color: #ae2b30;
+}
+
+.fitnessgoals {
+    display: none;
+}
+
+.weightmngmnt {
+    display: none;
+}
+
+.healthassm {
+    display: none;
+}
+
+.howtocalc {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ae2b30;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 1px 5vw 5px 9.1vw;
+    margin-top: 35px;
+    background-color: white;
+    border-radius: 6px;
+    padding-top: 12px;
+    margin-bottom: 5px;
+}
+
+.howtocalc h2 {
+    margin: 0;
+    padding: 0;
+    color: #0a0a59;
+}
+
+.formula {
+
+    font-family: "Afacad Flux", sans-serif;
+    background-color: #f9d3bb;
+    padding: 10px 14px 10px 14px;
+    border: var(--border_og);
+    border-radius: var(--border-rad_og);
+    /* box-shadow: var(--box-shadow_og); */
+
+}
+
+.steps {
+    font-family: "Afacad Flux", sans-serif;
+    background-color: rgba(128, 128, 128, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    margin-bottom: 15px;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 7px;
+    border-radius: var(--border-rad_og);
+
+}
+
+.steps ol {
+    margin-top: 0px;
+}
+
+.parent a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 59%;
+    white-space: normal;
+    margin-bottom: 15px;
+    margin-top: -4px;
+    text-decoration: none;
+    margin: -4px auto 15px 5.3vw;
+
+}
+
+.systemofunits {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ae2b30;
+    justify-content: center;
+    align-items: center;
+    width: 122%;
+    margin: 1px auto;
+    margin-top: 35px;
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: -7px;
+    padding-bottom: 7px;
+}
+
+#sou2 {
+    margin-top: 10px;
+}
+
+#sou1 {
+    margin-bottom: 14px;
+}
+
+.parent {
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    /* Align items from the start */
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.si {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16.3vw;
+    margin-bottom: 8px;
+}
+
+.example {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 6px 11px 6px 11px;
+    margin-top: 13px;
+    margin-bottom: 8px;
+    border-radius: var(--border-rad_og);
+}
+
+.systemofunits h4 {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 18px;
+    margin: 11px;
+}
+
+.welcome_main{
+    animation-name: landing_anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes landing_anim {
+    from{
+        right: 125px;
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+.head1whyuse{
+    animation-name: whyuse-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+
+@keyframes whyuse-anim {
+    from{
+        position: relative;
+        bottom: 30px;
+        opacity: 0;
+    }
+    
+    to{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+.cards{
+    animation-name: cards-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes cards-anim {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.content-cards{
+    animation-name: content-cards-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes content-cards-anim {
+    from{
+        position: relative;
+        right: -50px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.howtocalc{
+    animation-name: howtocalc-anim;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes howtocalc-anim {
+    from{
+        position: relative;
+        right: 125px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        opacity: 1;
+        right: 0px;
+    }
+    
+}
+
+.systemofunits{
+    animation-name: sou-anim;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes sou-anim {
+    from{
+        position: relative;
+        right: -50px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}

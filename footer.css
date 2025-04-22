@@ -1,0 +1,124 @@
+footer{
+    background-color: #500709;
+    color: white;
+    padding: 5px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 0.3;
+    padding-top: 30px;
+    padding-left: 22px;
+    margin-top: 60px;
+}
+
+footer h2{
+    font-size: 20px;
+}
+
+footer #subscription{
+    font-family: "Afacad Flux", sans-serif;
+    padding: 12px;
+    width: 370px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+footer #subscription:focus{
+    border: none;
+    outline: none;
+}
+
+footer #sb_btn{
+    padding: 0px 4px 0px 4px;
+    border-radius: 0px 4px 4px 0px;
+    width: 113px;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 16px;
+    position: relative;
+    right: 61px;
+    text-decoration: none;
+    outline: none;
+    bottom: 1.5px;
+    height: 51.4px;
+    border: none;
+    background-color: #777373;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: rgb(239, 239, 239);
+}
+
+footer #sb_btn:hover{
+    background-color: #646262;
+}
+
+.foot_left{
+    display: flex;
+    flex-direction: column;
+}
+
+.follow{
+    line-height: 1;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 18.5vw;
+    margin-bottom: 18px;
+    width: 278px;
+    position: relative;
+    bottom: 84px;
+    left: 7px;
+}
+
+.svg_size_design{
+    width: 33px;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+}
+
+#facebook{
+    position: relative;
+    right: 202px;
+}
+#twitter{
+    position: relative;
+    right: 192px;
+    width: 26px;
+    margin-top: 14px;
+}
+
+#instagram{
+    position: relative;
+    right: 178px;
+    width: 29px;
+    margin-top: 14px;
+}
+
+#linkedin{
+    position: relative;
+    right: 166px;
+    width: 32px;
+}
+
+#pinterest{
+    position: relative;
+    right: 157px;
+    width: 32px;
+}
+
+.platforms{
+    position: relative;
+    left: 120px;
+}
+
+.invert-on-hover:hover{
+    transform: scale(1.1);
+}
+
+.copyright{
+    text-align: center;
+    /* border: 2px solid; */
+    margin-top: -41px;
+    padding-bottom: 10px;
+    font-size: 16x;
+}
