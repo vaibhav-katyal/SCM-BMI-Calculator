@@ -264,3 +264,85 @@ body {
     color: #0a0a59;
 }
 
+.formula {
+
+    font-family: "Afacad Flux", sans-serif;
+    background-color: #f9d3bb;
+    padding: 10px 14px 10px 14px;
+    border: var(--border_og);
+    border-radius: var(--border-rad_og);
+    /* box-shadow: var(--box-shadow_og); */
+
+}
+
+.steps {
+    font-family: "Afacad Flux", sans-serif;
+    background-color: rgba(128, 128, 128, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    margin-bottom: 15px;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    padding-right: 7px;
+    border-radius: var(--border-rad_og);
+
+}
+
+.steps ol {
+    margin-top: 0px;
+}
+
+.parent a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 59%;
+    white-space: normal;
+    margin-bottom: 15px;
+    margin-top: -4px;
+    text-decoration: none;
+    margin: -4px auto 15px 5.3vw;
+
+}
+
+.systemofunits {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ae2b30;
+    justify-content: center;
+    align-items: center;
+    width: 122%;
+    margin: 1px auto;
+    margin-top: 35px;
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: -7px;
+    padding-bottom: 7px;
+}
+
+#sou2 {
+    margin-top: 10px;
+}
+
+#sou1 {
+    margin-bottom: 14px;
+}
+
+.parent {
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    /* Align items from the start */
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.si {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16.3vw;
+    margin-bottom: 8px;
+}
+
