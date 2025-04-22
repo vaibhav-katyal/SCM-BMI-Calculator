@@ -1,0 +1,51 @@
+footer{
+    background-color: #500709;
+    color: white;
+    padding: 5px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 0.3;
+    padding-top: 30px;
+    padding-left: 22px;
+    margin-top: 60px;
+}
+
+footer h2{
+    font-size: 20px;
+}
+
+footer #subscription{
+    font-family: "Afacad Flux", sans-serif;
+    padding: 12px;
+    width: 370px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+footer #subscription:focus{
+    border: none;
+    outline: none;
+}
+
+footer #sb_btn{
+    padding: 0px 4px 0px 4px;
+    border-radius: 0px 4px 4px 0px;
+    width: 113px;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 16px;
+    position: relative;
+    right: 61px;
+    text-decoration: none;
+    outline: none;
+    bottom: 1.5px;
+    height: 51.4px;
+    border: none;
+    background-color: #777373;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: rgb(239, 239, 239);
+}
+
