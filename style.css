@@ -346,3 +346,61 @@ body {
     margin-bottom: 8px;
 }
 
+.example {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 6px 11px 6px 11px;
+    margin-top: 13px;
+    margin-bottom: 8px;
+    border-radius: var(--border-rad_og);
+}
+
+.systemofunits h4 {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 18px;
+    margin: 11px;
+}
+
+.welcome_main{
+    animation-name: landing_anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes landing_anim {
+    from{
+        right: 125px;
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+.head1whyuse{
+    animation-name: whyuse-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+
+@keyframes whyuse-anim {
+    from{
+        position: relative;
+        bottom: 30px;
+        opacity: 0;
+    }
+    
+    to{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
