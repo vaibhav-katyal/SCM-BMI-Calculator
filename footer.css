@@ -1,4 +1,4 @@
-footer{
+footer {
     background-color: #500709;
     color: white;
     padding: 5px;
@@ -10,11 +10,11 @@ footer{
     margin-top: 60px;
 }
 
-footer h2{
+footer h2 {
     font-size: 20px;
 }
 
-footer #subscription{
+footer #subscription {
     font-family: "Afacad Flux", sans-serif;
     padding: 12px;
     width: 370px;
@@ -25,12 +25,12 @@ footer #subscription{
     outline: none;
 }
 
-footer #subscription:focus{
+footer #subscription:focus {
     border: none;
     outline: none;
 }
 
-footer #sb_btn{
+footer #sb_btn {
     padding: 0px 4px 0px 4px;
     border-radius: 0px 4px 4px 0px;
     width: 113px;
@@ -49,3 +49,48 @@ footer #sb_btn{
     color: rgb(239, 239, 239);
 }
 
+footer #sb_btn:hover {
+    background-color: #646262;
+}
+
+.foot_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.follow {
+    line-height: 1;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 18.5vw;
+    margin-bottom: 18px;
+    width: 278px;
+    position: relative;
+    bottom: 84px;
+    left: 7px;
+}
+
+.svg_size_design {
+    width: 33px;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+}
+
+#facebook {
+    position: relative;
+    right: 202px;
+}
+
+#twitter {
+    position: relative;
+    right: 192px;
+    width: 26px;
+    margin-top: 14px;
+}
+
+#instagram {
+    position: relative;
+    right: 178px;
+    width: 29px;
+    margin-top: 14px;
+}
