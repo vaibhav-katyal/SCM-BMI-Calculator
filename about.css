@@ -18,3 +18,26 @@ body {
     /* border: 2px solid; */
     margin-top: 10px;
 }
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 31px;
+    flex-wrap: wrap;
+    margin-bottom: 130px;
+    margin-top: 56px;
+}
+
+.cards a{
+    text-decoration: none;
+}
+
+.card_common {
+    border: 1px solid #ae2b30;
+    width: 277px;
+    height: 339px;
+    border-radius: 15px;
+    background-color: #f9d3bb;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 3px rgba(127, 95, 130, 0.37);
+    transition: all 0.2s ease;
+}
