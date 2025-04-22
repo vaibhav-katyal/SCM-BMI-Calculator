@@ -404,3 +404,87 @@ body {
     }
 }
 
+.cards{
+    animation-name: cards-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes cards-anim {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.content-cards{
+    animation-name: content-cards-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes content-cards-anim {
+    from{
+        position: relative;
+        right: -50px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.howtocalc{
+    animation-name: howtocalc-anim;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes howtocalc-anim {
+    from{
+        position: relative;
+        right: 125px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        opacity: 1;
+        right: 0px;
+    }
+    
+}
+
+.systemofunits{
+    animation-name: sou-anim;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes sou-anim {
+    from{
+        position: relative;
+        right: -50px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
