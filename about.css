@@ -41,3 +41,45 @@ body {
     box-shadow: 0px 0px 6px 3px rgba(127, 95, 130, 0.37);
     transition: all 0.2s ease;
 }
+.pfp {
+    margin: 1px auto;
+    /* border: 1px solid; */
+    text-align: center;
+    padding-top: 26px;
+}
+
+.pfp img {
+    border: 1px solid #ae2b30;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    object-position: 74% 9%;
+    scale: 1.2;
+}
+
+.cards-info {
+    text-align: right;
+    font-family: "Afacad Flux", sans-serif;
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #605050;
+    padding-right: 25px;
+}
+
+.info-parent {
+    margin-top: 26px;
+}
+
+.card_common:hover {
+    transform: scale(1.1);
+
+    .cards-info {
+        color: rgb(59, 55, 55);
+    }
+}
+
+
