@@ -67,3 +67,64 @@ body {
 
 }
 
+.overweight p{
+    margin-top: 6px;
+}
+
+.common{
+    border: 1px solid #ae2b30;
+    background-color: white;
+    padding: 5px 20px;
+    width: 38%;
+    border-radius: 5px;
+}
+
+.introtobmi {
+    animation-name: intro-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes intro-anim {
+    from{
+        position: relative;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        opacity: 1;
+    }
+}
+
+.heading{
+    animation-name: heading-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes heading-anim {
+    from{
+        position: relative;
+        bottom: 30px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
+.importance {
+    animation-name: health-risk-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
