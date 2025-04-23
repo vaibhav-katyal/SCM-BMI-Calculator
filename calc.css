@@ -290,3 +290,20 @@ input[type="number"]::-webkit-inner-spin-button {
     text-align: center;
     width: 240px;
 }
+
+
+@media(max-width:1206px){
+    .navbar li a{
+        padding-right:20px ;
+    }
+}
+@media(max-width:1150px){
+    .navbar li a{
+        padding-right:9px ;
+    }
+}
+@media(max-width:1048px){
+    .navbar li a{
+        padding-right:3px ;
+    }
+}
