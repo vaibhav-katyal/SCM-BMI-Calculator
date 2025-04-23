@@ -23,3 +23,9 @@ document.styleSheets[0].insertRule(`
         animation: overweight-anim 2s ease forwards;
     }
 `, document.styleSheets[0].cssRules.length);
+
+document.styleSheets[0].insertRule(`
+    .underweight.animate {
+        animation: underweight-anim 2s ease forwards;
+    }
+`, document.styleSheets[0].cssRules.length);
