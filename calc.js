@@ -66,4 +66,6 @@ function updateBMIBar(bmi) {
     } else {
         category = 'Obese';
     }
+
+    bmiResult.textContent = `Your BMI: ${bmi} (${category})`;
 }
