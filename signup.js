@@ -11,4 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
     closeButton.addEventListener('click', function() {
     signUpPopup.style.display = 'none';
     });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === signUpPopup) {
+          signUpPopup.style.display = 'none';
+        }
+      });  
 });
