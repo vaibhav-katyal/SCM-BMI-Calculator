@@ -85,3 +85,38 @@ input[type="number"] {
     width: 100px;
     /* font-weight: 550; */
 }
+
+input[type="number"]:focus {
+    border-bottom: 1px solid #ae2b30;
+    outline: none;
+}
+
+input[type="number"]::placeholder {
+    font-weight: lighter;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*remove the spinners (increasing decreasing buttons in right)*/
+
+#heig_adj {
+    position: relative;
+    left: 28px;
+    top: 51px;
+}
+
+.inp_heigh {
+    position: relative;
+    left: 28px;
+    top: 51px;
+}
+
+.cms {
+    position: relative;
+    margin-top: 18%;
+    margin-left: 11%;
+}
