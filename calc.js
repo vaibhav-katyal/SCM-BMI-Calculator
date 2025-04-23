@@ -15,3 +15,9 @@ switchToCmButton.addEventListener('click', (event) => {
     }
 });
 
+document.getElementById('calc_but').addEventListener('click', () => {
+    const ft = parseFloat(document.getElementById('ft').value) || 0;
+    const inches = parseFloat(document.getElementById('in').value) || 0;
+    const cm = parseFloat(document.getElementById('cm').value) || 0;
+    const weight = parseFloat(document.getElementById('weight').value) || 0;
+})
