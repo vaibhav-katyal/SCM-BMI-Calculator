@@ -17,4 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
           signUpPopup.style.display = 'none';
         }
       });  
+
+    signUpForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Sign up successful!');
+    signUpPopup.style.display = 'none';
+    });
+  
 });
