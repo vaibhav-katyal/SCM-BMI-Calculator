@@ -282,3 +282,11 @@ input[type="number"]::-webkit-inner-spin-button {
     transition: left 0.3s ease;
     transform: translateX(-50%);
 }
+
+#bmi-result {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 240px;
+}
