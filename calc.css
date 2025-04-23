@@ -263,3 +263,22 @@ input[type="number"]::-webkit-inner-spin-button {
 .healthy {
     background-color: #6edc6e;
 }
+
+.overweight {
+    background-color: #ffc107;
+}
+
+.obese {
+    background-color: #ff6b6b;
+}
+
+#bmi-indicator {
+    position: absolute;
+    top: -5px;
+    width: 10px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: left 0.3s ease;
+    transform: translateX(-50%);
+}
