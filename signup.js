@@ -7,5 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     signUpButton.addEventListener('click', function() {
         signUpPopup.style.display = 'block';
       });
-  
+
+    closeButton.addEventListener('click', function() {
+    signUpPopup.style.display = 'none';
+    });
 });
