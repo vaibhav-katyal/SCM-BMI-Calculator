@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="signup.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+    </style>
+    <link rel="shortcut icon" href="other images/images-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <a href="index.html">
+                <img src="other images/images-removebg-preview.png" alt="logo">
+                <div>FitGenius</div>
+            </a>
+        </div>
+
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="calc.html">BMI Calculator</a></li>
+                <li><a href="bmiinfo.html">BMI Info</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <img src="other images/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="user">
+            <button class="btn" id="sign">Sign Up</button>
+        </div>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="signUpPopup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h2>Sign Up</h2>
+                <form id="signUpForm">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="parent">
+        <div class="calculate">
+            <form class="form_c" action="#">
+                <div class="gen_sel">
+                    <label for="gender" id="lab_gen">GENDER</label><br>
+                    <input type="radio" name="GEN" id="male">
+                    <label for="male" class="resize">Male</label>
+                    <input type="radio" name="GEN" id="female">
+                    <label for="female" class="resize" id="re_fe">Female</label>
+                </div>
+        
+                <div class="height" id="height-ft-in">
+                    <label for="height" id="heig_adj">HEIGHT</label><br>
+                    <input class="inp_heigh" type="number" placeholder="FT" id="ft">
+                    <input class="inp_heigh" type="number" placeholder="IN" id="in">
+                </div>
+                
+                <div class="height hidden" id="height-cm">
+                    <label for="height" id="heig_adj">HEIGHT</label><br>
+                    <input class="inp_heigh" type="number" placeholder="CM" id="cm">
+                </div>
+        
+                <div class="cms">
+                    <a href="#" id="switch-to-cm">Switch to cm</a>
+                </div>
+                
+                <div class="age">
+                    <label for="age">AGE</label><br>
+                    <input type="number" name="" id="age" placeholder="Years">
+                </div>
+                
+                <div class="weight">
+                    <label for="weight">WEIGHT</label><br>
+                    <input type="tel" name="" id="weight" placeholder="in Kgs">
+                </div>     
+                
+                <div class="calc_final">
+                    <input id="calc_but" type="button" value="Calculate">
+                </div>
+                
+                <div class="bar">
+                    <div class="bmi-bar-wrapper">
+                        <div class="bmi-bar">
+                            <div class="bmi-segment underweight" data-label="Underweight"></div>
+                            <div class="bmi-segment healthy" data-label="Healthy"></div>
+                            <div class="bmi-segment overweight" data-label="Overweight"></div>
+                            <div class="bmi-segment obese" data-label="Obese"></div>
+                            <div id="bmi-indicator"></div>
+                        </div>
+                        <div id="bmi-result"><p>Your BMI: - (Calculate to see results)</p></div>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        </div>
+    
+    <div class="calc_cards">
+        <div class="bmi_categories cards_common">
+            <h2>BMI Categories</h2>
+            <p>For adults over the age of 20 years, BMI values are grouped into the following weight status categories:</p>
+            <table class="table_bmi">
+                <tr>
+                    <th>BMI</th>
+                    <th>Weight Status</th>
+                </tr>
+                <tr>
+                    <td>18.5-24.9</td>
+                    <td>Normal Weight</td>
+                </tr>
+                <tr>
+                    <td>25-29.9</td>
+                    <td>Overweight</td>
+                </tr>
+                <tr>
+                    <td>30-35</td>
+                    <td>Obese</td>
+                </tr>
+                <tr>
+                    <td>Over 35</td>
+                    <td> Morbid obesity</td>
+                </tr>
+            </table>
+            <p id="note"><i>The range remains the same for males and females. There is no separate BMI calculator for men and women.</i></p>
+        </div>
+        <div class="bmi_children cards_common"><h2>BMI for Children</h2>
+            <p>
+                In children, body fat content varies with age, and it is typical for teenage girls to have a higher body fat percentage than boys. Although BMI for children is calculated using the same formula as for adults, the result is then charted on age- and gender-specific BMI-for-age percentile charts. This helps determine a child's weight status by comparing it to peers of the same age and gender.</p>
+
+            <p class="highlight">For example, a 25th percentile BMI for a 6-year old female child would indicate that the child's weight is higher than 25% of girls aged 6.</p>
+        </div>
+
+    </div>
+
+        </div>
+        <footer>
+            <div class="foot_left">
+    
+                <h2>Sign up to receive free updates on health, fitness, and BMI insights!</h2>
+                <h4>Get tips for eating better and exercising smarter</h4>
+                <div class="subscribe_btn">
+                    <input type="email" name="" id="subscription" placeholder="Enter your email address">
+                    <input type="button" value="Subscribe" id="sb_btn">
+                </div>
+            </div>
+    
+            <div class="follow">
+                <span>Follow FitGenius on various platforms</span>
+                <div class="platforms">
+                    <a href="https://www.facebook.com"><img src="svgs/facebook.svg" alt="facebook" class="svg_size_design invert-on-hover" id="facebook"></a>
+                    <a href="https://www.twitter.com"><img src="svgs/twitter.svg" alt="twitter" class="svg_size_design invert-on-hover" id="twitter"></a>
+                    <a href="https://www.instagram.com"><img src="svgs/instagram.svg" alt="instagram" class="svg_size_design invert-on-hover" id="instagram"></a>
+                    <a href="https://www.linkedin.com"><img src="svgs/linkedin.svg" alt="linkedin" class="svg_size_design invert-on-hover" id="linkedin"></a>
+                    <a href="https://www.pinterest.com"><img src="svgs/pinterest-logo.svg" alt="pinterest" class="svg_size_design invert-on-hover" id="pinterest"></a>
+                </div>
+            </div>
+    
+            <div class="copyright">
+                <span>&copy; Copyright FitGenius. All Rights Reserved.</span>
+            </div>
+        </footer>
+        <script src="calc.js"></script>
+    <script src="signup.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>
