@@ -49,3 +49,39 @@ input[type="radio"]:checked+label {
     left: 26px;
     top: 15px;
 }
+
+.resize {
+    font-family: "Fredoka", sans-serif;
+    padding: 6px;
+    margin: 0px 7px;
+    border: 1px solid grey;
+    text-align: center;
+    width: 102px;
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    left: 19px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: rgb(56, 55, 55);
+}
+
+#re_fe {
+    position: relative;
+    left: 13px;
+}
+
+.form_c {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: rgb(82, 80, 80);
+}
+
+input[type="number"] {
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    width: 100px;
+    /* font-weight: 550; */
+}
