@@ -37,3 +37,16 @@ document.getElementById('calc_but').addEventListener('click', () => {
     }
 });
 
+// Update BMI bar based on BMI value
+function updateBMIBar(bmi) {
+    const bmiIndicator = document.getElementById('bmi-indicator');
+    const bmiResult = document.getElementById('bmi-result');
+    const bmiBar = document.querySelector('.bmi-bar'); // Get the bar to calculate its width
+    const barWidth = bmiBar.offsetWidth; // Dynamically calculate bar width
+    const bmiRanges = {
+        underweight: 18.5,
+        healthy: 24.9,
+        overweight: 29.9,
+        obese: 40
+    };
+}
