@@ -83,3 +83,10 @@ body {
 }
 
 
+.card_common{
+    animation-name: cards-anim;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
