@@ -49,4 +49,21 @@ function updateBMIBar(bmi) {
         overweight: 29.9,
         obese: 40
     };
+
+    // Normalize BMI to bar width (range: 10–40)
+    const normalizedBMI = Math.max(10, Math.min(40, bmi)); // Clamp BMI between 10 and 40
+    const position = ((normalizedBMI - 10) / (40 - 10)) * barWidth; // Map BMI to bar width
+    bmiIndicator.style.left = `${position}px`;
+
+    // Determine category and update text
+    let category = '';
+    if (bmi < bmiRanges.underweight) {
+        category = 'Underweight';
+    } else if (bmi <= bmiRanges.healthy) {
+        category = 'Healthy';
+    } else if (bmi <= bmiRanges.overweight) {
+        category = 'Overweight';
+    } else {
+        category = 'Obese';
+    }
 }
