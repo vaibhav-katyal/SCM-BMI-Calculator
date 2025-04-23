@@ -26,3 +26,44 @@ body {
     /* border: 2px solid; */
 }
 
+.introtobmi{
+    border: 1px solid #ae2b30;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 83%;
+    margin: 40px auto;
+    border-radius: 5px;
+}
+
+.importance{
+    /* font-family: "Afacad Flux", sans-serif; */
+    border: 1px solid #ae2b30;
+    background-color: white;
+    width: 83%;
+    padding: 8px 20px;
+    margin: 1px auto;
+    border-radius: 5px;
+}
+
+.importance ul{
+    line-height: 1;
+}
+
+.health_risks{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.common img{
+    width: 100px;
+}
+
+.health_risks h2{
+    margin-top: 8px;
+
+}
+
