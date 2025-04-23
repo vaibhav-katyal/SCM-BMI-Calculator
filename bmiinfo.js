@@ -9,3 +9,17 @@ const animateOnScroll = (entries, observer) => {
         }
     });
 };
+
+const observerOptions = {
+    root: null,
+    threshold: 0.1
+};
+const observer = new IntersectionObserver(animateOnScroll, observerOptions);
+
+observer.observe(overweightSection);
+observer.observe(underweightSection);
+document.styleSheets[0].insertRule(`
+    .overweight.animate {
+        animation: overweight-anim 2s ease forwards;
+    }
+`, document.styleSheets[0].cssRules.length);
