@@ -3,4 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const signUpPopup = document.getElementById('signUpPopup');
     const closeButton = signUpPopup.querySelector('.close');
     const signUpForm = document.getElementById('signUpForm');
-})
+
+    signUpButton.addEventListener('click', function() {
+        signUpPopup.style.display = 'block';
+      });
+  
+});
