@@ -120,3 +120,51 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-top: 18%;
     margin-left: 11%;
 }
+.cms a {
+    color: rgb(82, 80, 80);
+    font-size: 13px;
+}
+
+.cms a:hover {
+    color: #ae2b30;
+}
+
+.cms a:visited {
+    color: rgb(82, 80, 80);
+}
+
+.cms a:active {
+    color: black;
+}
+
+.age input[type="number"] {
+    border: 1px solid grey;
+    padding: 7px;
+    border-radius: 3px;
+    width: 75%;
+}
+
+.age input[type="number"]::placeholder {
+    text-align: right;
+    pointer-events: none;
+}
+
+.age {
+    position: absolute;
+    left: 31vw;
+    top: 13px;
+}
+
+.weight {
+    position: absolute;
+    left: 31vw;
+    top: 113px;
+
+}
+
+.weight input[type="tel"] {
+    border: 1px solid grey;
+    padding: 7px;
+    border-radius: 3px;
+    width: 82%;
+}
