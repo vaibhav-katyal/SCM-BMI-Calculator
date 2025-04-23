@@ -20,4 +20,20 @@ document.getElementById('calc_but').addEventListener('click', () => {
     const inches = parseFloat(document.getElementById('in').value) || 0;
     const cm = parseFloat(document.getElementById('cm').value) || 0;
     const weight = parseFloat(document.getElementById('weight').value) || 0;
-})
+
+    let heightInMeters = 0;
+
+    if (!heightFtIn.classList.contains('hidden')) {
+        heightInMeters = ((ft * 12) + inches) * 0.0254;
+    } else if (!heightCm.classList.contains('hidden')) {
+        heightInMeters = cm / 100;
+    }
+
+    if (heightInMeters > 0 && weight > 0) {
+        const bmi = weight / (heightInMeters * heightInMeters);
+        updateBMIBar(bmi.toFixed(1));
+    } else {
+        alert('Please enter valid height and weight values.');
+    }
+});
+
