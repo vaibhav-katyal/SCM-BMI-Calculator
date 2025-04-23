@@ -341,3 +341,12 @@ input[type="number"]::-webkit-inner-spin-button {
     border-collapse: collapse ;
     width: 90%;
 }
+
+.calc_cards table th,td{
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.calc_cards table td{
+    background-color: #f2f2f2;
+}
