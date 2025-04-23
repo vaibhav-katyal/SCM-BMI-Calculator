@@ -62,5 +62,63 @@
             </div>
         </div>
     </header>
+    <div class="parent">
+        <div class="calculate">
+            <form class="form_c" action="#">
+                <div class="gen_sel">
+                    <label for="gender" id="lab_gen">GENDER</label><br>
+                    <input type="radio" name="GEN" id="male">
+                    <label for="male" class="resize">Male</label>
+                    <input type="radio" name="GEN" id="female">
+                    <label for="female" class="resize" id="re_fe">Female</label>
+                </div>
+        
+                <div class="height" id="height-ft-in">
+                    <label for="height" id="heig_adj">HEIGHT</label><br>
+                    <input class="inp_heigh" type="number" placeholder="FT" id="ft">
+                    <input class="inp_heigh" type="number" placeholder="IN" id="in">
+                </div>
+                
+                <div class="height hidden" id="height-cm">
+                    <label for="height" id="heig_adj">HEIGHT</label><br>
+                    <input class="inp_heigh" type="number" placeholder="CM" id="cm">
+                </div>
+        
+                <div class="cms">
+                    <a href="#" id="switch-to-cm">Switch to cm</a>
+                </div>
+                
+                <div class="age">
+                    <label for="age">AGE</label><br>
+                    <input type="number" name="" id="age" placeholder="Years">
+                </div>
+                
+                <div class="weight">
+                    <label for="weight">WEIGHT</label><br>
+                    <input type="tel" name="" id="weight" placeholder="in Kgs">
+                </div>     
+                
+                <div class="calc_final">
+                    <input id="calc_but" type="button" value="Calculate">
+                </div>
+                
+                <div class="bar">
+                    <div class="bmi-bar-wrapper">
+                        <div class="bmi-bar">
+                            <div class="bmi-segment underweight" data-label="Underweight"></div>
+                            <div class="bmi-segment healthy" data-label="Healthy"></div>
+                            <div class="bmi-segment overweight" data-label="Overweight"></div>
+                            <div class="bmi-segment obese" data-label="Obese"></div>
+                            <div id="bmi-indicator"></div>
+                        </div>
+                        <div id="bmi-result"><p>Your BMI: - (Calculate to see results)</p></div>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        
+    </div>
 </body>
 </html>
