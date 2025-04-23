@@ -128,3 +128,57 @@ body {
     animation-fill-mode: forwards;
     animation-timing-function: ease;
 }
+
+@keyframes health-risk-anim {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.overweight{
+    animation-name: overweight-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes overweight-anim {
+    from{
+        position: relative;
+        right: 125px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+.underweight{
+    animation-name: underweight-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes underweight-anim {
+    from{
+        position: relative;
+        right: -50px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        opacity: 1;
+        right: 0px;
+    }
+}
