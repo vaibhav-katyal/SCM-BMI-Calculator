@@ -90,3 +90,16 @@ body {
     animation-fill-mode: forwards;
     animation-timing-function: ease;
 }
+@keyframes cards-anim {
+    from{
+        position: relative;
+        bottom: 30px;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+}
