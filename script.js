@@ -32,4 +32,23 @@ cards.forEach(card => {
     });
 });
 
-  
+showDefaultContent();
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Select the elements to observe
+    const animElements = document.querySelectorAll(".howtocalc, .systemofunits");
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = "running"; // Start the animation
+                    observer.unobserve(entry.target); // Stop observing the element after animation starts
+                }
+            });
+        },
+        { threshold: 0.1 } // Trigger when 10% of the element is visible
+    );
+})
+
