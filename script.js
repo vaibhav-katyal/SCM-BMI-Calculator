@@ -18,4 +18,18 @@ function showDefaultContent() {
     }
 }
 
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        Object.values(contents).forEach(content => {
+            if (content) content.style.display = 'none';
+        });
+
+        cards.forEach(c => c.classList.remove('active'));
+
+        const contentToShow = contents[card.id];
+        if (contentToShow) contentToShow.style.display = 'block';
+        card.classList.add('active');
+    });
+});
+
   
