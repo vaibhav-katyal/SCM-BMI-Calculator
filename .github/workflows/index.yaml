@@ -1,0 +1,39 @@
+name: Deploy BMI Calculator Landing Page
+
+on:
+  push:
+    branches:
+      - main  # or 'master', depending on your repo
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'  # Adjust if needed
+
+      - name: Install dependencies
+        run: npm install  # Assuming you're using a basic frontend stack with npm
+
+      - name: Build project
+        run: npm run build  # Optional if you have a build step
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # Your build output folder (e.g., dist, public)
+
