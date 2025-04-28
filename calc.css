@@ -581,3 +581,10 @@ td {
     display: flex;
     align-items: center;
 }
+
+.result-value {
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
