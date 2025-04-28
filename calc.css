@@ -581,3 +581,22 @@ td {
     display: flex;
     align-items: center;
 }
+
+.result-value {
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.result-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s;
+}
