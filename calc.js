@@ -39,6 +39,19 @@ document.getElementById("calc_but").addEventListener("click", () => {
       showError("Please enter valid height, weight, and age values.")
     }
   })
+  // Show error message
+function showError(message) {
+    const errorPopup = document.getElementById("error-popup")
+    const errorMessage = document.getElementById("error-message")
+  
+    errorMessage.textContent = message
+    errorPopup.classList.add("show")
+  
+    setTimeout(() => {
+      errorPopup.classList.remove("show")
+    }, 3000)
+  }
+  
 
 // Update BMI bar based on BMI value
 function updateBMIBar(bmi) {
