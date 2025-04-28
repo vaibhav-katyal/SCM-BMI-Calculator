@@ -54,17 +54,19 @@ function showError(message) {
   
 
 // Update BMI bar based on BMI value
+// Update BMI bar based on BMI value
 function updateBMIBar(bmi) {
-    const bmiIndicator = document.getElementById('bmi-indicator');
-    const bmiResult = document.getElementById('bmi-result');
-    const bmiBar = document.querySelector('.bmi-bar'); // Get the bar to calculate its width
-    const barWidth = bmiBar.offsetWidth; // Dynamically calculate bar width
+    const bmiIndicator = document.getElementById("bmi-indicator")
+    const bmiResult = document.getElementById("bmi-result")
+    const bmiBar = document.querySelector(".bmi-bar") // Get the bar to calculate its width
+    const barWidth = bmiBar.offsetWidth // Dynamically calculate bar width
     const bmiRanges = {
-        underweight: 18.5,
-        healthy: 24.9,
-        overweight: 29.9,
-        obese: 40
-    };
+      underweight: 18.5,
+      healthy: 24.9,
+      overweight: 29.9,
+      obese: 40,
+    }
+  
 
     // Normalize BMI to bar width (range: 10–40)
     const normalizedBMI = Math.max(10, Math.min(40, bmi)); // Clamp BMI between 10 and 40
