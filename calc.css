@@ -604,3 +604,13 @@ td {
 .result-close:hover {
     color: #333;
 }
+
+.result-body {
+    padding: 10px 0;
+}
+
+.result-body h3 {
+    color: #333;
+    margin-top: 0;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
