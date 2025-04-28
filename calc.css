@@ -633,3 +633,11 @@ td {
     position: absolute;
     left: -10px;
 }
+
+.age-specific {
+    background-color: #f8f8f8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ae2b30;
+    margin-top: 15px;
+}
