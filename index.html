@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="calc-styles.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="signup.css">
-    <link rel="shortcut icon" href="other images/images-removebg-preview.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
@@ -18,9 +18,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
     </style>
-    </style>
+    <link rel="shortcut icon" href="other images/images-removebg-preview.png" type="image/x-icon">
 </head>
-
 <body>
     <header>
         <div class="left">
@@ -64,167 +63,145 @@
             </div>
         </div>
     </header>
-
-    <main>
-        <div class="welcome_main">
-            <div class="welcome">
-                <span class="fitgen">Welcome to <span class="name">FitGenius!</span></span>
-            </div>
-
-            <div class="content">Your ultimate tool to calculate and understand your Body Mass Index (BMI).<br>
-
-                Track your health goals and stay fit with our accurate and easy-to-use BMI calculator.
-            </div>
-
-            <div class="calcbmi">
-                <a href="calc.html"><input type="button" value="Calculate Your BMI ->" class="calc_but"></a>
-
-            </div>
+    <div class="parent">
+        <div class="calculate">
+            <form class="form_c" action="#">
+                <div class="gen_sel">
+                    <label for="gender" id="lab_gen">GENDER</label><br>
+                    <input type="radio" name="GEN" id="male">
+                    <label for="male" class="resize">Male</label>
+                    <input type="radio" name="GEN" id="female">
+                    <label for="female" class="resize" id="re_fe">Female</label>
+                </div>
+        
+                <div class="height" id="height-ft-in">
+                    <label for="height" id="heig_adj">HEIGHT</label><br>
+                    <input class="inp_heigh" type="number" placeholder="FT" id="ft">
+                    <input class="inp_heigh" type="number" placeholder="IN" id="in">
+                </div>
+                
+                <div class="height hidden" id="height-cm">
+                    <label for="height" id="heig_adj">HEIGHT</label><br>
+                    <input class="inp_heigh" type="number" placeholder="CM" id="cm">
+                </div>
+        
+                <div class="cms">
+                    <a href="#" id="switch-to-cm">Switch to cm</a>
+                </div>
+                
+                <div class="age">
+                    <label for="age">AGE</label><br>
+                    <input type="number" name="" id="age" placeholder="Years">
+                </div>
+                
+                <div class="weight">
+                    <label for="weight">WEIGHT</label><br>
+                    <input type="tel" name="" id="weight" placeholder="in Kgs">
+                </div>     
+                
+                <div class="calc_final">
+                    <input id="calc_but" type="button" value="Calculate">
+                </div>
+                
+                <div class="bar">
+                    <div class="bmi-bar-wrapper">
+                        <div class="bmi-bar">
+                            <div class="bmi-segment underweight" data-label="Underweight"></div>
+                            <div class="bmi-segment healthy" data-label="Healthy"></div>
+                            <div class="bmi-segment overweight" data-label="Overweight"></div>
+                            <div class="bmi-segment obese" data-label="Obese"></div>
+                            <div id="bmi-indicator"></div>
+                        </div>
+                        <div id="bmi-result"><p>Your BMI: - (Calculate to see results)</p></div>
+                    </div>
+                </div>
+            </form>
         </div>
-
-        <div class="whyuse">
-            <div class="headwhyuse">
-                <h2 class="head1whyuse">Why use a BMI Calculator ?</h2>
-            </div>
-            <span class="pwhyuse">A BMI calculator offers a quick and easy method to find your BMI score. Here are some
-                important reasons to use it:</span>
-            <div class="cards">
-
-                <div class="pt pt1 active" id="why-heart">
-                    <img src="other images/heartbeat.png" alt="WT">
-                    Wellness Tracking
-                </div>
-
-
-                <div class="pt pt2" id="why-fitness">
-                    <img src="other images/fitness_goals1.png" alt="FG">
-                    Fitness Objectives
-                </div>
-
-
-                <div class="pt pt3" id="why-weight">
-                    <img src="other images/weight_management.png" alt="WM">
-                    Weight Management
-                </div>
-
-
-                <div class="pt pt4" id="why-health">
-                    <img src="other images/health.png" alt="HA">
-                    Health Assessment
-                </div>
-
-            </div>
-
-            <div class="content-cards">
-                <div class="wellnesstrack wellnesstracking" style="display: none;">
-                    <h3>Wellness Tracking</h3>
-                    <p>A BMI calculator helps you monitor your health by keeping track of key indicators. It allows you
-                        to identify potential health concerns early, giving you the chance to take preventive steps. By
-                        using the calculator, you can make informed decisions to actively maintain and improve your
-                        overall well-being.</p>
-                </div>
-
-                <div class="fitnessgoals" style="display: none;">
-                    <h3>Fitness Objectives</h3>
-                    <p>A BMI calculator serves as a useful tool in supporting your fitness journey. It helps you measure
-                        your physical progress with precision. Regularly tracking your BMI ensures that your fitness
-                        efforts stay on course and are aligned with your personal objectives.</p>
-                </div>
-                <div class="weightmngmnt" style="display: none;">
-                    <h3>Weight Management</h3>
-                    <p>A BMI calculator is a great tool for managing weight effectively. It helps you set practical
-                        weight targets and guides you toward achieving a healthier body weight. By using it, you can
-                        create a manageable weight plan with realistic milestones to reach over time.</p>
-                </div>
-                <div class="healthassm" style="display: none;">
-                    <h3>Health Assessment</h3>
-                    <p>Understanding your BMI provides key insights into your overall health. An online BMI calculator
-                        uses your height and weight to give a fast evaluation of your health status. It points out
-                        possible health risks and highlights areas for improvement to enhance your well-being. This
-                        keeps you on track to remain fit, active, and healthy.</p>
-                </div>
-            </div>
-
+    </div>
+    
+    <div class="calc_cards">
+        <div class="bmi_categories cards_common">
+            <h2>BMI Categories</h2>
+            <p>For adults over the age of 20 years, BMI values are grouped into the following weight status categories:</p>
+            <table class="table_bmi">
+                <tr>
+                    <th>BMI</th>
+                    <th>Weight Status</th>
+                </tr>
+                <tr>
+                    <td>18.5-24.9</td>
+                    <td>Normal Weight</td>
+                </tr>
+                <tr>
+                    <td>25-29.9</td>
+                    <td>Overweight</td>
+                </tr>
+                <tr>
+                    <td>30-35</td>
+                    <td>Obese</td>
+                </tr>
+                <tr>
+                    <td>Over 35</td>
+                    <td> Morbid obesity</td>
+                </tr>
+            </table>
+            <p id="note"><i>The range remains the same for males and females. There is no separate BMI calculator for men and women.</i></p>
         </div>
+        <div class="bmi_children cards_common"><h2>BMI for Children</h2>
+            <p>
+                In children, body fat content varies with age, and it is typical for teenage girls to have a higher body fat percentage than boys. Although BMI for children is calculated using the same formula as for adults, the result is then charted on age- and gender-specific BMI-for-age percentile charts. This helps determine a child's weight status by comparing it to peers of the same age and gender.</p>
 
-        <div class="parent">
+            <p class="highlight">For example, a 25th percentile BMI for a 6-year old female child would indicate that the child's weight is higher than 25% of girls aged 6.</p>
+        </div>
+    </div>
 
-            <div class="howtocalc">
-                <h2>How to Calculate ?</h2>
-                <span>Calculating your BMI is simple! Here's the formula we use:</span>
-                <p class="formula">BMI = Weight (kg) / Height<sup>2</sup> (cm<sup>2</sup>)</p>
-
-                <div class="steps">
-
-                    <h4>Steps to calculate:</h4>
-                    <ol>
-                        <li><b>Measure your weight:</b> Use a scale to get your weight in kilograms (kg).</li><br>
-                        <li><b>Measure your height:</b> Measure your height in centimeters(cm).</li><br>
-                        <li><b>Apply the formula:</b> Plug your weight and height into the formula above. We will do the
-                            calculation for you instantly!</li>
-                    </ol>
-
-                    <a href="calc.html"><input type="button" value="Calculate your BMI right away!"
-                            class="calc_but"></a>
+    <!-- BMI Result Popup -->
+    <div id="bmi-result-popup">
+        <div class="result-content">
+            <button id="result-close" class="result-close">&times;</button>
+            <div class="result-header">
+                <img id="result-image" class="result-image" src="other images/images-removebg-preview.png" alt="BMI Result">
+                <div class="result-title">
+                    <h2>Your BMI Results</h2>
+                    <p>BMI: <span id="result-value" class="result-value">25.0</span> <span id="result-category" class="category-healthy">Healthy</span></p>
                 </div>
-
-                <br>
             </div>
-            <div class="si">
-
-                <div class="systemofunits" id="sou1">
-                    <h4>International System of Units (SI)</h4><span class="formula">BMI = Weight (kg) /
-                        Height<sup>2</sup> (cm<sup>2</sup>)</span><span class="example">Example: <br>
-                        For a 188 cm (1.88 m) individual weighing 70 kg,<br>
-                        BMI = 70 / (1.88 * 1.88) = 70 / 3.53 = 19.83</span>
-                </div>
-                <div class="systemofunits" id="sou2">
-                    <h4>Imperial System</h4><span class="formula">BMI = Weight (lb) / (Height(inches))<sup>2</sup>
-                        *703</span><span class="example">Example: <br>
-                        For a 150-pound, 5’5” (50”) individual,<br>
-                        BMI = (150 / 50 * 50) * 703 = (150 / 2500) * 703 = 42.18</span>
+            <div class="result-body">
+                <h3>What This Means For You</h3>
+                <div id="result-precautions" class="result-precautions">
+                    <!-- Content will be added dynamically -->
                 </div>
             </div>
         </div>
+    </div>
+
+    <footer>
+        <div class="foot_left">
+            <h2>Sign up to receive free updates on health, fitness, and BMI insights!</h2>
+            <h4>Get tips for eating better and exercising smarter</h4>
+            <div class="subscribe_btn">
+                <input type="email" name="" id="subscription" placeholder="Enter your email address">
+                <input type="button" value="Subscribe" id="sb_btn">
+            </div>
         </div>
 
-        <footer>
-            <div class="foot_left">
-
-                <h2>Sign up to receive free updates on health, fitness, and BMI insights!</h2>
-                <h4>Get tips for eating better and exercising smarter</h4>
-                <div class="subscribe_btn">
-                    <input type="email" name="" id="subscription" placeholder="Enter your email address">
-                    <input type="button" value="Subscribe" id="sb_btn">
-                </div>
+        <div class="follow">
+            <span>Follow FitGenius on various platforms</span>
+            <div class="platforms">
+                <a href="https://www.facebook.com"><img src="svgs/facebook.svg" alt="facebook" class="svg_size_design invert-on-hover" id="facebook"></a>
+                <a href="https://www.twitter.com"><img src="svgs/twitter.svg" alt="twitter" class="svg_size_design invert-on-hover" id="twitter"></a>
+                <a href="https://www.instagram.com"><img src="svgs/instagram.svg" alt="instagram" class="svg_size_design invert-on-hover" id="instagram"></a>
+                <a href="https://www.linkedin.com"><img src="svgs/linkedin.svg" alt="linkedin" class="svg_size_design invert-on-hover" id="linkedin"></a>
+                <a href="https://www.pinterest.com"><img src="svgs/pinterest-logo.svg" alt="pinterest" class="svg_size_design invert-on-hover" id="pinterest"></a>
             </div>
+        </div>
 
-            <div class="follow">
-                <span>Follow FitGenius on various platforms</span>
-                <div class="platforms">
-                    <a href="https://www.facebook.com"><img src="svgs/facebook.svg" alt="facebook"
-                            class="svg_size_design invert-on-hover" id="facebook"></a>
-                    <a href="https://www.twitter.com"><img src="svgs/twitter.svg" alt="twitter"
-                            class="svg_size_design invert-on-hover" id="twitter"></a>
-                    <a href="https://www.instagram.com"><img src="svgs/instagram.svg" alt="instagram"
-                            class="svg_size_design invert-on-hover" id="instagram"></a>
-                    <a href="https://www.linkedin.com"><img src="svgs/linkedin.svg" alt="linkedin"
-                            class="svg_size_design invert-on-hover" id="linkedin"></a>
-                    <a href="https://www.pinterest.com"><img src="svgs/pinterest-logo.svg" alt="pinterest"
-                            class="svg_size_design invert-on-hover" id="pinterest"></a>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <span>&copy; Copyright FitGenius. All Rights Reserved.</span>
-            </div>
-        </footer>
-
-    </main>
-
-    <script src="script.js"></script>
+        <div class="copyright">
+            <span>&copy; Copyright FitGenius. All Rights Reserved.</span>
+        </div>
+    </footer>
+    <script src="calc.js"></script>
     <script src="signup.js"></script>
     <script src="navbar.js"></script>
 </body>
-
 </html>
