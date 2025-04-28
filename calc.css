@@ -600,3 +600,7 @@ td {
     color: #999;
     transition: color 0.3s;
 }
+
+.result-close:hover {
+    color: #333;
+}
