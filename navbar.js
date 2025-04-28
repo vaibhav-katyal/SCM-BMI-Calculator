@@ -9,4 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.classList.toggle('active');
         center.classList.toggle('active');
     });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!hamburger.contains(e.target) && !center.contains(e.target)) {
+            hamburger.classList.remove('active');
+            center.classList.remove('active');
+        }
+    });
 })
