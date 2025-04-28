@@ -404,3 +404,18 @@ input[type="number"]::-webkit-inner-spin-button {
         opacity: 1;
     }
 }
+
+.bar{
+    animation-name: bar-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes bar-anim {
+    from{
+        position: relative;
+        right: -30px;
+        opacity: 0;
+    }
