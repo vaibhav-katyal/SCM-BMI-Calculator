@@ -9,6 +9,7 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+
 .calculate {
     position: relative;
     top: 44px;
@@ -23,7 +24,7 @@ body {
     box-shadow: 0px 3px 6px #00000029;
 }
 
-.parent{
+.parent {
     display: flex;
     flex-direction: column;
     /* border: 2px solid; */
@@ -179,10 +180,10 @@ input[type="number"]::-webkit-inner-spin-button {
     outline: none;
 }
 
-#calc_but{
+#calc_but {
     font-family: "Baloo Bhaijaan 2", sans-serif;
     background: linear-gradient(140deg, #cd4247,
-    #b75255);
+            #b75255);
     position: relative;
     top: 27px;
     padding: 1px;
@@ -198,14 +199,14 @@ input[type="number"]::-webkit-inner-spin-button {
     transition: transform 0.6s ease;
 }
 
-#calc_but:hover{
+#calc_but:hover {
     background: linear-gradient(140deg, #ba363a,
-    #e84f54);
+            #e84f54);
     transform: scale(1.02);
 }
 
-#calc_but:focus{
-    box-shadow: 0px 0px 4px 1px rgba(237, 231, 225, 0.9 );
+#calc_but:focus {
+    box-shadow: 0px 0px 4px 1px rgba(237, 231, 225, 0.9);
 }
 
 .bmi-bar-wrapper {
@@ -292,37 +293,40 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
-@media(max-width:1206px){
-    .navbar li a{
-        padding-right:20px ;
+@media(max-width:1206px) {
+    .navbar li a {
+        padding-right: 20px;
     }
 }
-@media(max-width:1150px){
-    .navbar li a{
-        padding-right:9px ;
+
+@media(max-width:1150px) {
+    .navbar li a {
+        padding-right: 9px;
     }
 }
-@media(max-width:1048px){
-    .navbar li a{
-        padding-right:3px ;
+
+@media(max-width:1048px) {
+    .navbar li a {
+        padding-right: 3px;
     }
 }
-@media(max-width:1000px){
-    .bar{
+
+@media(max-width:1000px) {
+    .bar {
         position: absolute;
         left: 63%;
         top: 17%;
     }
 }
 
-.calc_cards{
+.calc_cards {
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
-.calc_cards h2{
+.calc_cards h2 {
     font-family: "Baloo Bhaijaan 2", sans-serif;
     color: #0a0a59;
     text-align: center;
@@ -331,49 +335,51 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
-.bmi_categories{
+.bmi_categories {
     font-family: "Afacad Flux", sans-serif;
     padding: 0px 21px;
 }
 
-.calc_cards table{
-    text-align: center ;
-    border-collapse: collapse ;
+.calc_cards table {
+    text-align: center;
+    border-collapse: collapse;
     width: 90%;
 }
 
-.calc_cards table th,td{
+.calc_cards table th,
+td {
     border: 1px solid black;
     padding: 7px;
 }
 
-.calc_cards table td{
+.calc_cards table td {
     background-color: #f2f2f2;
 }
 
-#note{
+#note {
     padding: 0px 31px;
     margin-top: 8px;
     color: #817f7f;
     line-height: 1.1;
 }
-.bmi_children{
+
+.bmi_children {
     font-family: "Afacad Flux", sans-serif;
     padding: 0px 29px;
 }
 
-.highlight{
+.highlight {
     margin: 0;
     padding: 10px;
     background-color: #f2f2f2;
 }
 
-.bmi_children h2{
+.bmi_children h2 {
     margin-top: -58px;
-    
+
 }
 
-.cards_common{
+.cards_common {
     border: 1px solid #ae2b30;
     border-radius: 6px;
     width: 430px;
@@ -381,13 +387,13 @@ input[type="number"]::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     justify-content:
-    center;
+        center;
     align-items: center;
     position: relative;
     bottom: 35px;
 }
 
-.calculate{
+.calculate {
     animation-name: calc-anim;
     animation-duration: 1.7s;
     animation-iteration-count: 1;
@@ -396,16 +402,16 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @keyframes calc-anim {
-    from{
+    from {
         opacity: 0;
     }
 
-    to{
+    to {
         opacity: 1;
     }
 }
 
-.bar{
+.bar {
     animation-name: bar-anim;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -414,20 +420,20 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @keyframes bar-anim {
-    from{
+    from {
         position: relative;
         right: -30px;
         opacity: 0;
     }
 
-    to{
+    to {
         position: relative;
         right: 0px;
         opacity: 1;
     }
 }
 
-.bmi_categories{
+.bmi_categories {
     animation-name: bmi_cate-anim;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -436,18 +442,18 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @keyframes bmi_cate-anim {
-    from{
+    from {
         right: 125px;
         opacity: 0;
     }
 
-    to{
+    to {
         opacity: 1;
         right: 0px;
     }
 }
 
-.bmi_children{
+.bmi_children {
     animation-name: bmi_child-anim;
     animation-duration: 2s;
     animation-iteration-count: 1;
@@ -456,13 +462,94 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @keyframes bmi_child-anim {
-    from{
+    from {
         right: -50px;
         opacity: 0;
     }
 
-    to{
+    to {
         right: 0px;
         opacity: 1;
     }
 }
+
+/* Add these styles to your existing CSS */
+
+/* 3D effect for calculator */
+.calculate {
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Pulse animation for calculate button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 1s ease;
+}
+
+/* BMI Result Popup */
+#bmi-result-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#bmi-result-popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.result-content {
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(50px);
+    opacity: 0;
+    animation: popup-enter 0.5s forwards;
+}
+
+@keyframes popup-enter {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.result-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+

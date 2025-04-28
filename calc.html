@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="calc-styles.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="signup.css">
@@ -112,13 +113,11 @@
                             <div id="bmi-indicator"></div>
                         </div>
                         <div id="bmi-result"><p>Your BMI: - (Calculate to see results)</p></div>
-                        
                     </div>
                 </div>
             </form>
         </div>
-        
-        </div>
+    </div>
     
     <div class="calc_cards">
         <div class="bmi_categories cards_common">
@@ -154,37 +153,62 @@
 
             <p class="highlight">For example, a 25th percentile BMI for a 6-year old female child would indicate that the child's weight is higher than 25% of girls aged 6.</p>
         </div>
-
     </div>
 
+    <!-- BMI Result Popup -->
+    <div id="bmi-result-popup">
+        <div class="result-content">
+            <button id="result-close" class="result-close">&times;</button>
+            <div class="result-header">
+                <img id="result-image" class="result-image" src="other images/images-removebg-preview.png" alt="BMI Result">
+                <div class="result-title">
+                    <h2>Your BMI Results</h2>
+                    <p>BMI: <span id="result-value" class="result-value">25.0</span> <span id="result-category" class="category-healthy">Healthy</span></p>
+                </div>
+            </div>
+            <div class="result-body">
+                <h3>What This Means For You</h3>
+                <div id="result-precautions" class="result-precautions">
+                    <!-- Content will be added dynamically -->
+                </div>
+            </div>
         </div>
-        <footer>
-            <div class="foot_left">
-    
-                <h2>Sign up to receive free updates on health, fitness, and BMI insights!</h2>
-                <h4>Get tips for eating better and exercising smarter</h4>
-                <div class="subscribe_btn">
-                    <input type="email" name="" id="subscription" placeholder="Enter your email address">
-                    <input type="button" value="Subscribe" id="sb_btn">
-                </div>
+    </div>
+
+    <!-- Error Popup -->
+    <div id="error-popup">
+        <p id="error-message">Please enter valid values</p>
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+
+    <footer>
+        <div class="foot_left">
+            <h2>Sign up to receive free updates on health, fitness, and BMI insights!</h2>
+            <h4>Get tips for eating better and exercising smarter</h4>
+            <div class="subscribe_btn">
+                <input type="email" name="" id="subscription" placeholder="Enter your email address">
+                <input type="button" value="Subscribe" id="sb_btn">
             </div>
-    
-            <div class="follow">
-                <span>Follow FitGenius on various platforms</span>
-                <div class="platforms">
-                    <a href="https://www.facebook.com"><img src="svgs/facebook.svg" alt="facebook" class="svg_size_design invert-on-hover" id="facebook"></a>
-                    <a href="https://www.twitter.com"><img src="svgs/twitter.svg" alt="twitter" class="svg_size_design invert-on-hover" id="twitter"></a>
-                    <a href="https://www.instagram.com"><img src="svgs/instagram.svg" alt="instagram" class="svg_size_design invert-on-hover" id="instagram"></a>
-                    <a href="https://www.linkedin.com"><img src="svgs/linkedin.svg" alt="linkedin" class="svg_size_design invert-on-hover" id="linkedin"></a>
-                    <a href="https://www.pinterest.com"><img src="svgs/pinterest-logo.svg" alt="pinterest" class="svg_size_design invert-on-hover" id="pinterest"></a>
-                </div>
+        </div>
+
+        <div class="follow">
+            <span>Follow FitGenius on various platforms</span>
+            <div class="platforms">
+                <a href="https://www.facebook.com"><img src="svgs/facebook.svg" alt="facebook" class="svg_size_design invert-on-hover" id="facebook"></a>
+                <a href="https://www.twitter.com"><img src="svgs/twitter.svg" alt="twitter" class="svg_size_design invert-on-hover" id="twitter"></a>
+                <a href="https://www.instagram.com"><img src="svgs/instagram.svg" alt="instagram" class="svg_size_design invert-on-hover" id="instagram"></a>
+                <a href="https://www.linkedin.com"><img src="svgs/linkedin.svg" alt="linkedin" class="svg_size_design invert-on-hover" id="linkedin"></a>
+                <a href="https://www.pinterest.com"><img src="svgs/pinterest-logo.svg" alt="pinterest" class="svg_size_design invert-on-hover" id="pinterest"></a>
             </div>
-    
-            <div class="copyright">
-                <span>&copy; Copyright FitGenius. All Rights Reserved.</span>
-            </div>
-        </footer>
-        <script src="calc.js"></script>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; Copyright FitGenius. All Rights Reserved.</span>
+        </div>
+    </footer>
+    <script src="calc.js"></script>
     <script src="signup.js"></script>
     <script src="navbar.js"></script>
 </body>
