@@ -87,3 +87,67 @@ function updateBMIBar(bmi) {
 
   bmiResult.innerHTML = <p>Your BMI: ${bmi} <span class="category-${category.toLowerCase()}">(${category})</span></p>
 }
+// Show BMI result with animation and precautions
+function showBMIResult(bmi, isMale, age) {
+    const resultPopup = document.getElementById("bmi-result-popup")
+    const resultValue = document.getElementById("result-value")
+    const resultCategory = document.getElementById("result-category")
+    const resultPrecautions = document.getElementById("result-precautions")
+    const resultImage = document.getElementById("result-image")
+    const resultClose = document.getElementById("result-close")
+  
+    // Determine BMI category
+    let category = ""
+    let precautions = ""
+    let imageUrl = ""
+  
+    if (bmi < 18.5) {
+      category = "Underweight"
+      precautions = `
+              <ul>
+                  <li>Increase calorie intake with nutrient-dense foods</li>
+                  <li>Add protein-rich foods to your diet (eggs, nuts, lean meats)</li>
+                  <li>Eat smaller meals more frequently throughout the day</li>
+                  <li>Consider strength training to build muscle mass</li>
+                  <li>Consult with a healthcare provider about potential underlying conditions</li>
+              </ul>
+          `
+      imageUrl = "other images/underweight.png"
+    } else if (bmi <= 24.9) {
+      category = "Healthy"
+      precautions = `
+              <ul>
+                  <li>Maintain a balanced diet with plenty of fruits and vegetables</li>
+                  <li>Stay physically active with at least 150 minutes of moderate exercise weekly</li>
+                  <li>Get regular health check-ups</li>
+                  <li>Maintain good sleep habits (7-9 hours per night)</li>
+                  <li>Manage stress through relaxation techniques</li>
+              </ul>
+          `
+      imageUrl = "other images/healthy.png"
+    } else if (bmi <= 29.9) {
+      category = "Overweight"
+      precautions = `
+              <ul>
+                  <li>Reduce calorie intake moderately (300-500 calories less per day)</li>
+                  <li>Increase physical activity to at least 30 minutes daily</li>
+                  <li>Focus on whole foods and reduce processed food consumption</li>
+                  <li>Monitor portion sizes during meals</li>
+                  <li>Stay hydrated and limit sugary beverages</li>
+              </ul>
+          `
+      imageUrl = "other images/overweight.png"
+    } else {
+      category = "Obese"
+      precautions = `
+              <ul>
+                  <li>Consult with a healthcare provider for a personalized weight management plan</li>
+                  <li>Consider working with a registered dietitian</li>
+                  <li>Start with low-impact exercises like walking or swimming</li>
+                  <li>Set realistic weight loss goals (1-2 pounds per week)</li>
+                  <li>Monitor for related health conditions like high blood pressure or diabetes</li>
+              </ul>
+          `
+      imageUrl = "other images/obese.png"
+    }
+}
