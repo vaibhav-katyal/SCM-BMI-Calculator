@@ -17,4 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
             center.classList.remove('active');
         }
     });
-})
+
+    // Close menu when clicking on any navigation link
+    const navLinks = document.querySelectorAll('.navbar li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            center.classList.remove('active');
+        });
+    });
+});
