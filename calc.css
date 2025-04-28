@@ -544,3 +544,12 @@ td {
         opacity: 1;
     }
 }
+
+.result-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
