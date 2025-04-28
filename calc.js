@@ -15,27 +15,30 @@ switchToCmButton.addEventListener('click', (event) => {
     }
 });
 
-document.getElementById('calc_but').addEventListener('click', () => {
-    const ft = parseFloat(document.getElementById('ft').value) || 0;
-    const inches = parseFloat(document.getElementById('in').value) || 0;
-    const cm = parseFloat(document.getElementById('cm').value) || 0;
-    const weight = parseFloat(document.getElementById('weight').value) || 0;
-
-    let heightInMeters = 0;
-
-    if (!heightFtIn.classList.contains('hidden')) {
-        heightInMeters = ((ft * 12) + inches) * 0.0254;
-    } else if (!heightCm.classList.contains('hidden')) {
-        heightInMeters = cm / 100;
+document.getElementById("calc_but").addEventListener("click", () => {
+    const ft = Number.parseFloat(document.getElementById("ft").value) || 0
+    const inches = Number.parseFloat(document.getElementById("in").value) || 0
+    const cm = Number.parseFloat(document.getElementById("cm").value) || 0
+    const weight = Number.parseFloat(document.getElementById("weight").value) || 0
+    const age = Number.parseFloat(document.getElementById("age").value) || 0
+    const isMale = document.getElementById("male").checked
+  
+    let heightInMeters = 0
+  
+    if (!heightFtIn.classList.contains("hidden")) {
+      heightInMeters = (ft * 12 + inches) * 0.0254
+    } else if (!heightCm.classList.contains("hidden")) {
+      heightInMeters = cm / 100
     }
-
-    if (heightInMeters > 0 && weight > 0) {
-        const bmi = weight / (heightInMeters * heightInMeters);
-        updateBMIBar(bmi.toFixed(1));
+  
+    if (heightInMeters > 0 && weight > 0 && age > 0) {
+      const bmi = weight / (heightInMeters * heightInMeters)
+      updateBMIBar(bmi.toFixed(1))
+      showBMIResult(bmi.toFixed(1), isMale, age)
     } else {
-        alert('Please enter valid height and weight values.');
+      showError("Please enter valid height, weight, and age values.")
     }
-});
+  })
 
 // Update BMI bar based on BMI value
 function updateBMIBar(bmi) {
