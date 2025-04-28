@@ -522,3 +522,25 @@ td {
     opacity: 1;
     visibility: visible;
 }
+
+.result-content {
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(50px);
+    opacity: 0;
+    animation: popup-enter 0.5s forwards;
+}
+
+@keyframes popup-enter {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
