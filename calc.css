@@ -553,3 +553,262 @@ td {
     padding-bottom: 15px;
 }
 
+.result-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-title {
+    flex: 1;
+}
+
+.result-title h2 {
+    margin: 0;
+    color: #333;
+    font-size: 28px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.result-title p {
+    margin: 5px 0 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.result-value {
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.result-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s;
+}
+
+.result-close:hover {
+    color: #333;
+}
+
+.result-body {
+    padding: 10px 0;
+}
+
+.result-body h3 {
+    color: #333;
+    margin-top: 0;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.result-precautions ul {
+    padding-left: 20px;
+}
+
+.result-precautions li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 10px;
+    line-height: 1.5;
+}
+
+.result-precautions li::before {
+    content: "•";
+    color: #ae2b30;
+    font-weight: bold;
+    position: absolute;
+    left: -10px;
+}
+
+.age-specific {
+    background-color: #f8f8f8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ae2b30;
+    margin-top: 15px;
+}
+
+/* Category colors */
+.category-underweight {
+    color: #69b3f3;
+    font-weight: bold;
+}
+
+.category-healthy {
+    color: #6edc6e;
+    font-weight: bold;
+}
+
+.category-overweight {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.category-obese {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* Error popup */
+#error-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transform: translateX(150%);
+    transition: transform 0.3s ease;
+}
+
+#error-popup.show {
+    transform: translateX(0);
+}
+
+/* Confetti animation */
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.confetti {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    animation: fall 5s linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .result-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .result-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .result-content {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* BMI Gauge Animation */
+.bmi-bar {
+    position: relative;
+    overflow: hidden;
+}
+
+.bmi-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    100% {
+        left: 100%;
+    }
+}
+
+/* Floating animation for cards */
+.cards_common {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 6s ease-in-out infinite;
+}
+
+.bmi_categories {
+    animation-delay: 0s;
+}
+
+.bmi_children {
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.cards_common:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlight text animation */
+.highlight {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(174, 43, 48, 0.2);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+.highlight:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
