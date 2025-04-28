@@ -1,0 +1,555 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://www.iciciprulife.com/content/icici-prudential-life-insurance/testing/tools-and-calculators/bmi_assets/images/calcBG.svg") repeat-y;
+    background-size: cover;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.calculate {
+    position: relative;
+    top: 44px;
+    border: 1px solid #ae2b30;
+    display: flex;
+    flex-flow: wrap;
+    width: 83%;
+    height: 300px;
+    margin: 3px auto;
+    border-radius: 14px;
+    background-color: white;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid; */
+    height: 440px;
+    margin: 0px 30px 0px 30px;
+    width: 95%;
+}
+
+input[type="radio"] {
+    display: none;
+
+}
+
+input[type="radio"]:checked+label {
+    border-color: #ae2b30;
+    font-weight: 500;
+}
+
+#lab_gen {
+    color: rgb(82, 80, 80);
+    font-weight: 300px;
+    position: relative;
+    left: 26px;
+    top: 15px;
+}
+
+.resize {
+    font-family: "Fredoka", sans-serif;
+    padding: 6px;
+    margin: 0px 7px;
+    border: 1px solid grey;
+    text-align: center;
+    width: 102px;
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    left: 19px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: rgb(56, 55, 55);
+}
+
+#re_fe {
+    position: relative;
+    left: 13px;
+}
+
+.form_c {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: rgb(82, 80, 80);
+}
+
+input[type="number"] {
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    width: 100px;
+    /* font-weight: 550; */
+}
+
+input[type="number"]:focus {
+    border-bottom: 1px solid #ae2b30;
+    outline: none;
+}
+
+input[type="number"]::placeholder {
+    font-weight: lighter;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* remove the spinners (increasing decreasing buttons in right) */
+
+#heig_adj {
+    position: relative;
+    left: 28px;
+    top: 51px;
+}
+
+.inp_heigh {
+    position: relative;
+    left: 28px;
+    top: 51px;
+}
+
+.cms {
+    position: relative;
+    margin-top: 18%;
+    margin-left: 11%;
+}
+
+.cms a {
+    color: rgb(82, 80, 80);
+    font-size: 13px;
+}
+
+.cms a:hover {
+    color: #ae2b30;
+}
+
+.cms a:visited {
+    color: rgb(82, 80, 80);
+}
+
+.cms a:active {
+    color: black;
+}
+
+.age input[type="number"] {
+    border: 1px solid grey;
+    padding: 7px;
+    border-radius: 3px;
+    width: 75%;
+}
+
+.age input[type="number"]::placeholder {
+    text-align: right;
+    pointer-events: none;
+}
+
+.age {
+    position: absolute;
+    left: 31vw;
+    top: 13px;
+}
+
+.weight {
+    position: absolute;
+    left: 31vw;
+    top: 113px;
+
+}
+
+.weight input[type="tel"] {
+    border: 1px solid grey;
+    padding: 7px;
+    border-radius: 3px;
+    width: 82%;
+}
+
+.weight input[type="tel"]::placeholder {
+    text-align: right;
+    pointer-events: none;
+}
+
+.weight input[type="tel"]:focus {
+    outline: none;
+}
+
+#calc_but {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    background: linear-gradient(140deg, #cd4247,
+            #b75255);
+    position: relative;
+    top: 27px;
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 6px;
+    /* left: 12rem; */
+    left: 251px;
+    width: 61%;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.6s ease;
+}
+
+#calc_but:hover {
+    background: linear-gradient(140deg, #ba363a,
+            #e84f54);
+    transform: scale(1.02);
+}
+
+#calc_but:focus {
+    box-shadow: 0px 0px 4px 1px rgba(237, 231, 225, 0.9);
+}
+
+.bmi-bar-wrapper {
+    border: 1px solid #ae2b30;
+    width: 90%;
+    margin-top: 90px;
+    position: relative;
+    left: 433px;
+    background-color: #fdf2ec;
+    padding: 31px;
+    height: 65px;
+    padding-top: 49px;
+    border-radius: 7px;
+    position: relative;
+    bottom: 283px;
+    padding-bottom: 43px;
+    left: 685px
+}
+
+
+.bmi-bar {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    position: relative;
+}
+
+.bmi-segment {
+    flex: 1;
+    position: relative;
+}
+
+.bmi-segment::after {
+    content: attr(data-label);
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #666;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.underweight {
+    background-color: #69b3f3;
+}
+
+.healthy {
+    background-color: #6edc6e;
+}
+
+.overweight {
+    background-color: #ffc107;
+}
+
+.obese {
+    background-color: #ff6b6b;
+}
+
+#bmi-indicator {
+    position: absolute;
+    top: -5px;
+    width: 10px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: left 0.3s ease;
+    transform: translateX(-50%);
+}
+
+#bmi-result {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 240px;
+}
+
+
+@media(max-width:1206px) {
+    .navbar li a {
+        padding-right: 20px;
+    }
+}
+
+@media(max-width:1150px) {
+    .navbar li a {
+        padding-right: 9px;
+    }
+}
+
+@media(max-width:1048px) {
+    .navbar li a {
+        padding-right: 3px;
+    }
+}
+
+@media(max-width:1000px) {
+    .bar {
+        position: absolute;
+        left: 63%;
+        top: 17%;
+    }
+}
+
+.calc_cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.calc_cards h2 {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    color: #0a0a59;
+    text-align: center;
+    margin-bottom: -9px;
+    margin-top: 9px;
+}
+
+
+.bmi_categories {
+    font-family: "Afacad Flux", sans-serif;
+    padding: 0px 21px;
+}
+
+.calc_cards table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+.calc_cards table th,
+td {
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.calc_cards table td {
+    background-color: #f2f2f2;
+}
+
+#note {
+    padding: 0px 31px;
+    margin-top: 8px;
+    color: #817f7f;
+    line-height: 1.1;
+}
+
+.bmi_children {
+    font-family: "Afacad Flux", sans-serif;
+    padding: 0px 29px;
+}
+
+.highlight {
+    margin: 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.bmi_children h2 {
+    margin-top: -58px;
+
+}
+
+.cards_common {
+    border: 1px solid #ae2b30;
+    border-radius: 6px;
+    width: 430px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:
+        center;
+    align-items: center;
+    position: relative;
+    bottom: 35px;
+}
+
+.calculate {
+    animation-name: calc-anim;
+    animation-duration: 1.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes calc-anim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.bar {
+    animation-name: bar-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes bar-anim {
+    from {
+        position: relative;
+        right: -30px;
+        opacity: 0;
+    }
+
+    to {
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+.bmi_categories {
+    animation-name: bmi_cate-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes bmi_cate-anim {
+    from {
+        right: 125px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+.bmi_children {
+    animation-name: bmi_child-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes bmi_child-anim {
+    from {
+        right: -50px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+/* Add these styles to your existing CSS */
+
+/* 3D effect for calculator */
+.calculate {
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Pulse animation for calculate button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 1s ease;
+}
+
+/* BMI Result Popup */
+#bmi-result-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#bmi-result-popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.result-content {
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(50px);
+    opacity: 0;
+    animation: popup-enter 0.5s forwards;
+}
+
+@keyframes popup-enter {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.result-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
