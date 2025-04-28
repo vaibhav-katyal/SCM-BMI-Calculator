@@ -553,3 +553,13 @@ td {
     padding-bottom: 15px;
 }
 
+.result-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
