@@ -150,4 +150,20 @@ function showBMIResult(bmi, isMale, age) {
           `
       imageUrl = "other images/obese.png"
     }
+      // Add age-specific advice
+  if (age < 18) {
+    precautions += `
+            <p class="age-specific">
+                <strong>Note for teens:</strong> BMI calculations for people under 18 should be interpreted differently. 
+                Please consult with a pediatrician for proper growth assessment.
+            </p>
+        `
+  } else if (age > 65) {
+    precautions += `
+            <p class="age-specific">
+                <strong>Note for seniors:</strong> BMI ranges may be interpreted slightly differently for older adults.
+                Focus on maintaining muscle mass and overall health rather than a specific weight.
+            </p>
+        `
+  }
 }
