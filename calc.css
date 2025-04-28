@@ -614,3 +614,22 @@ td {
     margin-top: 0;
     font-family: "Baloo Bhaijaan 2", sans-serif;
 }
+
+.result-precautions ul {
+    padding-left: 20px;
+}
+
+.result-precautions li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 10px;
+    line-height: 1.5;
+}
+
+.result-precautions li::before {
+    content: "•";
+    color: #ae2b30;
+    font-weight: bold;
+    position: absolute;
+    left: -10px;
+}
