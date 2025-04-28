@@ -426,3 +426,23 @@ input[type="number"]::-webkit-inner-spin-button {
         opacity: 1;
     }
 }
+
+.bmi_categories{
+    animation-name: bmi_cate-anim;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes bmi_cate-anim {
+    from{
+        right: 125px;
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+        right: 0px;
+    }
+}
