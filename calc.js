@@ -168,7 +168,7 @@ function showBMIResult(bmi, isMale, age) {
   }
   resultValue.textContent = bmi
   resultCategory.textContent = category
-  resultCategory.className = category-${category.toLowerCase()}
+  resultCategory.className = 'category-${category.toLowerCase()}'
   resultPrecautions.innerHTML = precautions
   resultImage.src = imageUrl || "other images/images-removebg-preview.png"
 
@@ -221,7 +221,7 @@ calculator.addEventListener("mousemove", (e) => {
   const tiltX = (y - centerY) / 20
   const tiltY = (centerX - x) / 20
 
-  calculator.style.transform = perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)
+  calculator.style.transform = 'perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)'
 })
 calculator.addEventListener("mouseleave", () => {
     calculator.style.transform = "perspective(1000px) rotateX(0) rotateY(0)"
