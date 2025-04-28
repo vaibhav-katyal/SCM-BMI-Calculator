@@ -166,4 +166,22 @@ function showBMIResult(bmi, isMale, age) {
             </p>
         `
   }
+  resultValue.textContent = bmi
+  resultCategory.textContent = category
+  resultCategory.className = category-${category.toLowerCase()}
+  resultPrecautions.innerHTML = precautions
+  resultImage.src = imageUrl || "other images/images-removebg-preview.png"
+
+  // Show popup with animation
+  resultPopup.classList.add("show")
+
+  // Add confetti effect for healthy BMI
+  if (category === "Healthy") {
+    createConfetti()
+  }
+
+  // Close button event
+  resultClose.addEventListener("click", () => {
+    resultPopup.classList.remove("show")
+  })
 }
