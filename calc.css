@@ -361,3 +361,14 @@ input[type="number"]::-webkit-inner-spin-button {
     font-family: "Afacad Flux", sans-serif;
     padding: 0px 29px;
 }
+
+.highlight{
+    margin: 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.bmi_children h2{
+    margin-top: -58px;
+    
+}
