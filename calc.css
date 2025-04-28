@@ -350,3 +350,14 @@ input[type="number"]::-webkit-inner-spin-button {
 .calc_cards table td{
     background-color: #f2f2f2;
 }
+
+#note{
+    padding: 0px 31px;
+    margin-top: 8px;
+    color: #817f7f;
+    line-height: 1.1;
+}
+.bmi_children{
+    font-family: "Afacad Flux", sans-serif;
+    padding: 0px 29px;
+}
