@@ -223,3 +223,6 @@ calculator.addEventListener("mousemove", (e) => {
 
   calculator.style.transform = perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)
 })
+calculator.addEventListener("mouseleave", () => {
+    calculator.style.transform = "perspective(1000px) rotateX(0) rotateY(0)"
+  })
