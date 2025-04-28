@@ -185,3 +185,22 @@ function showBMIResult(bmi, isMale, age) {
     resultPopup.classList.remove("show")
   })
 }
+
+function createConfetti() {
+    const confettiContainer = document.getElementById("confetti-container")
+    confettiContainer.innerHTML = ""
+  
+    for (let i = 0; i < 100; i++) {
+      const confetti = document.createElement("div")
+      confetti.className = "confetti"
+      confetti.style.left = Math.random() * 100 + "vw"
+      confetti.style.animationDelay = Math.random() * 5 + "s"
+      confetti.style.backgroundColor = getRandomColor()
+  
+      confettiContainer.appendChild(confetti)
+    }
+  
+    setTimeout(() => {
+      confettiContainer.innerHTML = ""
+    }, 6000)
+  }
