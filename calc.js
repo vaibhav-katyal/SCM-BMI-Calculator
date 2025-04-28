@@ -226,3 +226,12 @@ calculator.addEventListener("mousemove", (e) => {
 calculator.addEventListener("mouseleave", () => {
     calculator.style.transform = "perspective(1000px) rotateX(0) rotateY(0)"
   })
+
+  // Add pulse animation to calculate button
+const calculateButton = document.getElementById("calc_but")
+setInterval(() => {
+  calculateButton.classList.add("pulse")
+  setTimeout(() => {
+    calculateButton.classList.remove("pulse")
+  }, 1000)
+}, 3000)
