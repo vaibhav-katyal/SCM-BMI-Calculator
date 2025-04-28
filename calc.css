@@ -641,3 +641,24 @@ td {
     border-left: 4px solid #ae2b30;
     margin-top: 15px;
 }
+
+/* Category colors */
+.category-underweight {
+    color: #69b3f3;
+    font-weight: bold;
+}
+
+.category-healthy {
+    color: #6edc6e;
+    font-weight: bold;
+}
+
+.category-overweight {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.category-obese {
+    color: #ff6b6b;
+    font-weight: bold;
+}
