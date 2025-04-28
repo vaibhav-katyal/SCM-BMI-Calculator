@@ -208,3 +208,18 @@ function createConfetti() {
     const colors = ["#ff6b6b", "#4ecdc4", "#ffbe0b", "#ff9f1c", "#2ec4b6", "#e71d36"]
     return colors[Math.floor(Math.random() * colors.length)]
   }
+  // Add 3D tilt effect to the calculator
+const calculator = document.querySelector(".calculate")
+calculator.addEventListener("mousemove", (e) => {
+  const rect = calculator.getBoundingClientRect()
+  const x = e.clientX - rect.left
+  const y = e.clientY - rect.top
+
+  const centerX = rect.width / 2
+  const centerY = rect.height / 2
+
+  const tiltX = (y - centerY) / 20
+  const tiltY = (centerX - x) / 20
+
+  calculator.style.transform = perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)
+})
