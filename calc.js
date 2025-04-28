@@ -73,17 +73,17 @@ function updateBMIBar(bmi) {
     const position = ((normalizedBMI - 10) / (40 - 10)) * barWidth; // Map BMI to bar width
     bmiIndicator.style.left = `${position}px`;
 
-    // Determine category and update text
-    let category = '';
-    if (bmi < bmiRanges.underweight) {
-        category = 'Underweight';
-    } else if (bmi <= bmiRanges.healthy) {
-        category = 'Healthy';
-    } else if (bmi <= bmiRanges.overweight) {
-        category = 'Overweight';
-    } else {
-        category = 'Obese';
-    }
+  // Determine category and update text
+  let category = ""
+  if (bmi < bmiRanges.underweight) {
+    category = "Underweight"
+  } else if (bmi <= bmiRanges.healthy) {
+    category = "Healthy"
+  } else if (bmi <= bmiRanges.overweight) {
+    category = "Overweight"
+  } else {
+    category = "Obese"
+  }
 
-    bmiResult.textContent = `Your BMI: ${bmi} (${category})`;
+  bmiResult.innerHTML = <p>Your BMI: ${bmi} <span class="category-${category.toLowerCase()}">(${category})</span></p>
 }
