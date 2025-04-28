@@ -204,3 +204,7 @@ function createConfetti() {
       confettiContainer.innerHTML = ""
     }, 6000)
   }
+  function getRandomColor() {
+    const colors = ["#ff6b6b", "#4ecdc4", "#ffbe0b", "#ff9f1c", "#2ec4b6", "#e71d36"]
+    return colors[Math.floor(Math.random() * colors.length)]
+  }
