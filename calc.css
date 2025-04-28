@@ -419,3 +419,10 @@ input[type="number"]::-webkit-inner-spin-button {
         right: -30px;
         opacity: 0;
     }
+
+    to{
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
