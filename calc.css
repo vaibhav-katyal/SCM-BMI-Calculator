@@ -372,3 +372,17 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-top: -58px;
     
 }
+
+.cards_common{
+    border: 1px solid #ae2b30;
+    border-radius: 6px;
+    width: 430px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:
+    center;
+    align-items: center;
+    position: relative;
+    bottom: 35px;
+}
